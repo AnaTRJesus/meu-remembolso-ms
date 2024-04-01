@@ -1,4 +1,4 @@
-package ms.meu.reembolso.repository;
+package ms.meu.reembolso.gateway.repository.impl.mongo;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import ms.meu.reembolso.model.Reembolso;
 
 
 
-public interface ReembolsoRepository extends MongoRepository<Reembolso, Long>, QuerydslPredicateExecutor<Reembolso> {
+public interface ReembolsoRepositoryMongo extends MongoRepository<Reembolso, Long>, QuerydslPredicateExecutor<Reembolso> {
 
     List<Reembolso> findById(String name);
 }
